@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Commite Events — Design System Variables & Theme Tokens
+   ========================================================================== */
+
+:root {
+  /* Font Family Definitions */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Easing & Transition Standard */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-theme: background-color 0.4s ease, border-color 0.4s ease, color 0.3s ease;
+
+  /* Global Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Section Padding Scale */
+  --section-padding-desktop: 96px;
+  --section-padding-tablet: 72px;
+  --section-padding-mobile: 56px;
+
+  /* Border Radius Hierarchy */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Depth Shadows & Glows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.2);
+
+  /* Container Constraints */
+  --container-max-width: 1280px;
+  --header-height: 80px;
+
+  /* Default Dark Theme Fallback Surfaces */
+  --bg-primary: #0B0C0E;
+  --bg-secondary: #13151A;
+  --bg-tertiary: #1C1F26;
+  --bg-overlay: rgba(11, 12, 14, 0.88);
+  --bg-glass: rgba(19, 21, 26, 0.7);
+
+  /* Typography Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  --border-accent: rgba(59, 130, 246, 0.4);
+
+  /* Accent Branding (Controlled Deep Blue) */
+  --accent-primary: #3B82F6;
+  --accent-hover: #60A5FA;
+  --accent-glow: rgba(59, 130, 246, 0.28);
+  --accent-subtle: rgba(59, 130, 246, 0.12);
+
+  /* Ambient Grid & Glow Effects */
+  --grid-line-color: rgba(255, 255, 255, 0.04);
+  --vignette-color: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.8) 100%);
+
+  /* Neomorphism Shadows */
+  --neo-shadow-dark: #0a0b0e;
+  --neo-shadow-light: #1c1f26;
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME TOKENS (Default Monochrome Luxury Aesthetic)
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"], body[data-theme="dark"] {
+  --bg-primary: #0B0C0E;
+  --bg-secondary: #13151A;
+  --bg-tertiary: #1C1F26;
+  --bg-overlay: rgba(11, 12, 14, 0.88);
+  --bg-glass: rgba(19, 21, 26, 0.7);
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  --border-accent: rgba(59, 130, 246, 0.4);
+
+  --accent-primary: #3B82F6;
+  --accent-hover: #60A5FA;
+  --accent-glow: rgba(59, 130, 246, 0.28);
+  --accent-subtle: rgba(59, 130, 246, 0.12);
+
+  --grid-line-color: rgba(255, 255, 255, 0.04);
+  --vignette-color: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.8) 100%);
+
+  --neo-shadow-dark: #0a0b0e;
+  --neo-shadow-light: #1c1f26;
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT THEME TOKENS (Luxury High-Contrast Modern Aesthetic)
+   -------------------------------------------------------------------------- */
+:root[data-theme="light"], body[data-theme="light"] {
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #F1F5F9;
+  --bg-tertiary: #E2E8F0;
+  --bg-overlay: rgba(250, 250, 250, 0.88);
+  --bg-glass: rgba(241, 245, 249, 0.75);
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-medium: rgba(15, 23, 42, 0.16);
+  --border-strong: rgba(15, 23, 42, 0.28);
+  --border-accent: rgba(37, 99, 235, 0.5);
+
+  --accent-primary: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-glow: rgba(37, 99, 235, 0.22);
+  --accent-subtle: rgba(37, 99, 235, 0.08);
+
+  --grid-line-color: rgba(0, 0, 0, 0.04);
+  --vignette-color: radial-gradient(circle at center, transparent 50%, rgba(200, 205, 215, 0.4) 100%);
+
+  --neo-shadow-dark: #cbd5e1;
+  --neo-shadow-light: #ffffff;
+}

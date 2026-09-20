@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Commite Events — Typography System
+   ========================================================================== */
+
+/* Space Grotesk Headings */
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1, .display-1, .hero-heading {
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* 40px to 72px */
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+h2, .display-2, .section-heading {
+  font-size: clamp(2rem, 3.5vw, 3rem); /* 32px to 48px */
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+h3, .display-3, .sub-heading {
+  font-size: clamp(1.25rem, 2vw, 1.5rem); /* 20px to 24px */
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+h4 {
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  line-height: 1.4;
+}
+
+/* Inter Body Text */
+body {
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+p, .body-regular {
+  font-size: clamp(1rem, 1.1vw, 1.125rem); /* 16px to 18px */
+  line-height: 1.6;
+  margin: 0;
+}
+
+.body-large {
+  font-size: clamp(1.0625rem, 1.2vw, 1.25rem); /* 17px to 20px */
+  line-height: 1.6;
+}
+
+.body-small, .text-small {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+}
+
+.text-overline {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-primary);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-accent-glow {
+  color: var(--accent-primary);
+  text-shadow: 0 0 20px var(--accent-glow);
+}

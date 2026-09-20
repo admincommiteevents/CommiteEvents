@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commite Events | Premium Event Management Company Lucknow</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Commite Events | Premium Event Management Company Lucknow" />
+    <meta name="description" content="Commite Events is Lucknow's premier event management company specializing in corporate events, college fests, weddings, exhibitions, concerts, and professional staffing." />
+    <meta name="keywords" content="Commite Events, Lucknow Event Management, Corporate Events Lucknow, Wedding Planner Lucknow, Parikshit Events, Crewlytics, Vishesh Pandey, Shivam Singh" />
+    <meta name="author" content="Commite Events" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Theme FOUC Prevention Script -->
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('ce_theme');
+          var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
